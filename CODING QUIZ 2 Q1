@@ -1,0 +1,35 @@
+package quiz;
+import java.util.Scanner;
+public class Quiz2q1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int classes, classesattended;
+		double percentage;
+		
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("Enter number of classes held: ");
+		classes = scan.nextInt();
+		
+		System.out.println("Enter number of classes attended: ");
+		classesattended = scan.nextInt();
+		
+		percentage = (classesattended/classes)*100;
+		System.out.println("Percentage of class attended: " + percentage);
+		
+		if (percentage > 75) {
+			System.out.println("Student is allowed to sit in exam");
+		}
+		else {
+			System.out.println("Student is not allowed to sit for exam");
+		}
+		
+		
+		
+
+	}
+
+}
